@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <title>News</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.6rem;
+        height: 100%;
+        overflow: auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="cover">
+        <img
+          src="./images/GS1.jpg"
+          alt="Cover Image"
+          title="Gavespot Cover"
+          height="100vh"
+        />
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li style="float: right"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <h3 style="margin-left: 18px">Send us a message</h3>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <label for="State">State</label>
+        <select id="State" name="State">
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttrakhand">Uttrakhand</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+      <br /><br /><br />
+    </div>
+
+    <footer class="footer">
+      <p>Gamespot</p>
+      <p class="credits">Creator: Ayush Ranjan Dubey</p>
+    </footer>
+  </body>
+</html>
